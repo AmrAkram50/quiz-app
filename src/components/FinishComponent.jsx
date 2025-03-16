@@ -14,7 +14,7 @@ const FinishComponent = () => {
     };
 
     const handleWindowClose = () => {
-        window.close();
+        window.alert('Thanks for having this quiz!!');
     }
 
     const handleTryAgain = () => {
@@ -29,8 +29,8 @@ const FinishComponent = () => {
             <NumbersCounter n={Number.parseInt(scorePercentage)} />
             <div className="text-lg text-gray-500">Your score: {score}/6</div>
             <div className='flex gap-4 lg:gap-0 lg:w-1/3 justify-between items-center'>
-                <button onClick={handleTryAgain} className='p-4 text-md md:text-lg w-[140px] font-semibold rounded-lg border-2 border-[#44E14A] hover:bg-[#44E14A] hover:text-white transition-all duration-500'>Try Again</button>
-                <button onClick={handleWindowClose} className='p-4 text-md md:text-lg text-white w-[140px] font-semibold rounded-lg border-2 border-red-500 bg-red-500 hover:bg-red-400 transition-all duration-500'>Exit</button>
+                <button onClick={handleTryAgain} className='p-4 text-md md:text-lg md:w-[140px] font-semibold rounded-lg border-2 border-[#44E14A] hover:bg-[#44E14A] hover:text-white transition-all duration-500'>Try Again</button>
+                <button onClick={handleWindowClose} className='p-4 text-md md:text-lg text-white md:w-[140px] font-semibold rounded-lg border-2 border-red-500 bg-red-500 hover:bg-red-400 transition-all duration-500'>Exit</button>
             </div>
         </div>
     );

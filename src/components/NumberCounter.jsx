@@ -2,10 +2,6 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 
 const NumbersCounter = ({ n }) => {
-
-  const radius = 80; 
-  const circumference = 2 * Math.PI * radius; 
-
   const { number } = useSpring({
     from: { number: 0 },
     to: { number: n },
@@ -13,9 +9,12 @@ const NumbersCounter = ({ n }) => {
     config: { mass: 1, tension: 20, friction: 11 },
   });
 
+  const radius = 90;
+  const circumference = 2 * Math.PI * radius;
+
   return (
-    <div className="relative w-1/3 h-1/3 flex items-center justify-center">
-      <svg className="absolute" width="200" height="200" viewBox="0 0 200 200">
+    <div className="relative flex items-center justify-center w-52 h-5w-52">
+      <svg width="100%" height="100%" viewBox="0 0 200 200">
         <circle
           cx="100"
           cy="100"
@@ -36,11 +35,11 @@ const NumbersCounter = ({ n }) => {
             (val) => circumference - (val / 100) * circumference
           )}
           strokeLinecap="round"
-          transform="rotate(-90 100 100)" // Start from the top
+          transform="rotate(-90 100 100)" 
         />
       </svg>
 
-      <animated.div className="text-5xl font-bold text-[#44E14A]">
+      <animated.div className="absolute text-5xl font-bold text-[#44E14A]">
         {number.to((val) => `${Math.round(val)}%`)}
       </animated.div>
     </div>

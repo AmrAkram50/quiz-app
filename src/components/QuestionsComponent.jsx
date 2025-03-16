@@ -34,11 +34,11 @@ const QuestionsComponent = () => {
     };
 
     return (
-        <div className="w-5/6 h-full p-4 m-4 bg-white gap-y-5 md:gap-y-8 rounded-3xl flex flex-col items-center justify-start shadow-xl border-2 border-gray-400">
+        <div className="w-5/6 h-full p-4 bg-white gap-y-5 md:gap-y-2 rounded-3xl flex flex-col items-center justify-start shadow-xl border-2 border-gray-400">
             
             <ProgressBar current={currentQuestion + 1} total={questions.length} />
 
-            <h2 className="text-xl md:text-3xl font-semibold md:my-4">{questions[currentQuestion].question}</h2>
+            <h2 className="text-xl md:text-2xl font-semibold md:my-1">{questions[currentQuestion].question}</h2>
 
             <FormControl>
                 <RadioGroup
@@ -49,7 +49,7 @@ const QuestionsComponent = () => {
                     className='gap-y-2 mt-6'
                 >
                     {questions[currentQuestion].answers.map((answer, index) => (
-                        <div className={`p-4 border-2 border-gray-400 rounded-2xl`}>
+                        <div className={`px-4 py-2 border-2 border-gray-400 rounded-2xl`}>
                             <FormControlLabel value={index} control={<Radio />} label={answer} />
                         </div>
                     ))}

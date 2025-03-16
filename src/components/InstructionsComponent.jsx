@@ -6,13 +6,13 @@ const InstructionsComponent = () => {
     const {setComponentsIndex} = useContext(AppContext);
 
   return (
-    <div className="w-5/6 h-full p-8 m-4 bg-white rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
+    <div className="w-5/6 h-full p-4 bg-white rounded-3xl gap-y-2 flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
 
-      <h2 className="font-bold text-[35px] lg:text-[50px] text-[#44E14A] mb-6 text-center">
+      <h2 className="font-bold text-[35px] lg:text-[40] text-[#44E14A] mb-4 text-center">
         Quiz Instructions
       </h2>
 
-      <ul className="text-md lg:text-lg text-gray-600 mb-8 max-w-2xl space-y-4 leading-relaxed list-disc list-inside">
+      <ul className="text-md lg:text-lg text-gray-600 max-w-2xl space-y-4 leading-relaxed list-disc list-inside">
         <li>The quiz is time limited, pay attention to the timer.</li>
         <li>Read each question carefully before choosing your answer.</li>
         <li>You cannot go back to previous questions once answered.</li>

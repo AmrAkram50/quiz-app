@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className='flex items-center justify-center w-full h-screen p-4 bg-green-100'>
+    <div className='flex items-center justify-center h-full min-h-screen p-4 bg-green-100'>
       {componentsMap[componentsIndex]}
     </div>
   )
