@@ -24,12 +24,12 @@ const FinishComponent = () => {
 
     return (
         <div className="w-5/6 h-full p-4 m-4 bg-white gap-y-8 rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
-            <div className="text-3xl md:text-4xl font-bold text-[#44E14A]">Congratulations!</div>
+            <div className="text-3xl md:text-4xl font-bold text-[#5BCE5B]">Congratulations!</div>
             <div className="text-md md:text-xl font-medium text-gray-700">{getGreetingMessage()}</div>
             <NumbersCounter n={Number.parseInt(scorePercentage)} />
             <div className="text-lg text-gray-500">Your score: {score}/6</div>
             <div className='flex gap-4 lg:gap-0 lg:w-1/3 justify-between items-center'>
-                <button onClick={handleTryAgain} className='p-4 text-md md:text-lg md:w-[140px] font-semibold rounded-lg border-2 border-[#44E14A] hover:bg-[#44E14A] hover:text-white transition-all duration-500'>Try Again</button>
+                <button onClick={handleTryAgain} className='p-4 text-md md:text-lg md:w-[140px] font-semibold rounded-lg border-2 border-[#5BCE5B] hover:bg-[#5BCE5B] hover:text-white transition-all duration-500'>Try Again</button>
                 <button onClick={handleWindowClose} className='p-4 text-md md:text-lg text-white md:w-[140px] font-semibold rounded-lg border-2 border-red-500 bg-red-500 hover:bg-red-400 transition-all duration-500'>Exit</button>
             </div>
         </div>

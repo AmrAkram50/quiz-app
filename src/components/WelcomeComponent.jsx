@@ -8,7 +8,7 @@ const WelcomeComponent = () => {
 
   return (
     <div className="w-5/6 h-full p-4 bg-white rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
-      <h1 className="font-bold text-[35px] lg:text-[40px] text-[#44E14A] mb-4 text-center">
+      <h1 className="font-bold text-[35px] lg:text-[40px] text-[#5BCE5B] mb-4 text-center">
         Welcome to your Quiz App
       </h1>
 
@@ -21,7 +21,7 @@ const WelcomeComponent = () => {
         <img src={QuizImg} alt="Quiz Image" className="w-3/4" />
       </div>
 
-      <button onClick={() => setComponentsIndex(1)} className="bg-[#44E14A] text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-[#36b53c] transition duration-500">
+      <button onClick={() => setComponentsIndex(1)} className="bg-[#5BCE5B] text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-[#36b53c] transition duration-500">
         Start Quiz
       </button>
     </div>

@@ -58,7 +58,7 @@ const QuestionsComponent = () => {
             </FormControl>
             
             <div className='w-full h-full flex items-end justify-end px-12'>
-            <button disabled={selectedAnswer === '' ? true : false} className="bg-[#44E14A] m-4 text-white px-4 md:px-6 py-3 rounded-xl text-lg font-semibold hover:bg-[#36b53c] transition duration-500" onClick={handleAnswerSubmit}>Submit answer</button>
+            <button disabled={selectedAnswer === '' ? true : false} className="bg-[#5BCE5B] m-4 text-white px-4 md:px-6 py-3 rounded-xl text-lg font-semibold hover:bg-[#36b53c] transition duration-500" onClick={handleAnswerSubmit}>Submit answer</button>
             </div>
         </div>
     )

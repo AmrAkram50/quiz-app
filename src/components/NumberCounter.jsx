@@ -28,7 +28,7 @@ const NumbersCounter = ({ n }) => {
           cy="100"
           r={radius}
           fill="transparent"
-          stroke="#44E14A"
+          stroke="#5BCE5B"
           strokeWidth="12"
           strokeDasharray={circumference}
           strokeDashoffset={number.to(
@@ -39,7 +39,7 @@ const NumbersCounter = ({ n }) => {
         />
       </svg>
 
-      <animated.div className="absolute text-5xl font-bold text-[#44E14A]">
+      <animated.div className="absolute text-5xl font-bold text-[#5BCE5B]">
         {number.to((val) => `${Math.round(val)}%`)}
       </animated.div>
     </div>

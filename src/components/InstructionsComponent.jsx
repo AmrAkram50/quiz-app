@@ -8,7 +8,7 @@ const InstructionsComponent = () => {
   return (
     <div className="w-5/6 h-full p-4 bg-white rounded-3xl gap-y-2 flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
 
-      <h2 className="font-bold text-[35px] lg:text-[40] text-[#44E14A] mb-4 text-center">
+      <h2 className="font-bold text-[35px] lg:text-[40] text-[#5BCE5B] mb-4 text-center">
         Quiz Instructions
       </h2>
 
@@ -24,7 +24,7 @@ const InstructionsComponent = () => {
         ⚠️ Once you start the quiz, you cannot pause or restart!
       </p>
 
-      <button onClick={() => setComponentsIndex(2)} className="bg-[#44E14A] text-white px-6 py-3 rounded-xl text-md lg:text-lg font-semibold hover:bg-[#36b53c] transition duration-300">
+      <button onClick={() => setComponentsIndex(2)} className="bg-[#5BCE5B] text-white px-6 py-3 rounded-xl text-md lg:text-lg font-semibold hover:bg-[#36b53c] transition duration-300">
         I Understand, Start Quiz
       </button>
     </div>
