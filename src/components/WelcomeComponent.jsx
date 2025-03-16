@@ -7,7 +7,7 @@ const WelcomeComponent = () => {
   const {setComponentsIndex} = useContext(AppContext);
 
   return (
-    <div className="w-5/6 h-full p-4 bg-white rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
+    <div className="w-[95%] md:w-5/6 h-full p-4 bg-white rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
       <h1 className="font-bold text-[35px] lg:text-[40px] text-[#5BCE5B] mb-4 text-center">
         Welcome to your Quiz App
       </h1>

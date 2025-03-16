@@ -23,7 +23,7 @@ const FinishComponent = () => {
     }
 
     return (
-        <div className="w-5/6 h-full p-4 m-4 bg-white gap-y-8 rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
+        <div className="w-[95%] md:w-5/6 h-full p-4 m-4 bg-white gap-y-8 rounded-3xl flex flex-col items-center justify-center shadow-xl border-2 border-gray-400">
             <div className="text-3xl md:text-4xl font-bold text-[#5BCE5B]">Congratulations!</div>
             <div className="text-md md:text-xl font-medium text-gray-700">{getGreetingMessage()}</div>
             <NumbersCounter n={Number.parseInt(scorePercentage)} />
